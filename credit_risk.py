@@ -350,11 +350,11 @@ pd.DataFrame({"combination": answers_grid["combination"],
 # The values for train_accuracy (0.99) and test_accuracy (0.76) is optimum for
 # num_class = 4, colsample_bytree = 0.9, learning_rate = 1, max_depth = 10, alpha = 100, n_estimators = 100
 
-# optimum model
+# optimum model - 82% ACCURACY WITH TRAINING DATA, 78% ACCURACY WITH TEST DATA
 model = xgb.XGBClassifier(objective = "multi:softmax",
                           num_class = 4,
-                          colsample_bytree = 0.9,
-                          learning_rate = 1,
+                          colsample_bytree = 0.7,
+                          learning_rate = 0.1,
                           max_depth = 10,
                           alpha = 100,
                           n_estimators = 100)

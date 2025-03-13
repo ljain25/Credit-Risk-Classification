@@ -22,36 +22,6 @@ if uploaded_file is not None:
 
     try:
 
-        # cat_cols = []
-        # for i in df.columns:
-        #     if df[i].dtype == "object":
-        #         cat_cols.append(i)
-        #
-        # num_cols = []
-        # for i in df.columns:
-        #     if df[i].dtype != "object" and i not in ["PROSPECTID", "Approved_Flag"]:
-        #         num_cols.append(i)
-        #
-        # # Checking multicollinearity - calculating VIF (sequential)
-        # vif_data = df[num_cols]
-        # total_columns = vif_data.shape[1]
-        # columns_to_be_kept = []
-        # column_index = 0
-        #
-        # for i in range(0, total_columns):
-        #
-        #     vif_value = variance_inflation_factor(vif_data, column_index)
-        #
-        #     if vif_value <= 6:
-        #         columns_to_be_kept.append(num_cols[i])
-        #         column_index = column_index + 1
-        #
-        #     else:
-        #         vif_data = vif_data.drop(columns=[num_cols[i]])
-        #
-        #
-        # df = df[cat_cols + columns_to_be_kept]
-
         df.loc[df["EDUCATION"] == "SSC", ["EDUCATION"]] = 1
         df.loc[df["EDUCATION"] == "12TH", ["EDUCATION"]] = 2
         df.loc[df["EDUCATION"] == "GRADUATE", ["EDUCATION"]] = 3
