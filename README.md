@@ -8,6 +8,7 @@ This project analyzes credit risk classification using machine learning models. 
 - Handled missing data 🔍
 - Categorical & numerical feature selection 🏷️
 - Performed Chi-square test and ANOVA for feature selection 📊
+- Applied Variance Inflation Factor (VIF) to detect and remove multicollinear features 🔄
 - Applied one-hot encoding & label encoding 🎭
 
 ## 🏗️ Model Training & Evaluation
