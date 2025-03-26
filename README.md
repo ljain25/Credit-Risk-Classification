@@ -29,5 +29,11 @@ This project analyzes credit risk classification using machine learning models. 
 ## 💾 Model Deployment
 - Final model saved as `model.sav` 📥
 - Training dataset exported as `training_data.csv` 📑
+- A Streamlit application (`app.py`) was developed for easy model interaction and predictions 🎛️
 
+## 🖥️ Streamlit Web App
+- Allows users to upload a CSV file and receive predictions 📂➡️📊
+- Preprocesses data, handling categorical variables and encoding 🏷️
+- Uses the trained model to classify risk levels 📉
+- Displays results in a table and offers CSV download 📥
 
